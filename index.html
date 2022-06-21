@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+   <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://twitter.com/Kolbe_sama" target="_blank">Maxmillian Ogbuabor</a>.
+    </div>
+<!--NAVIGATION-BAR-->
+  <section class="nav_container">
+    <div class="left_side_div">
+      <img src="./images/logo.svg" alt="logo" class="logo">
+      <nav class="nav_bar">
+        <ul>
+          <li><a href="#" onclick="dropDownFeatures()">Features <img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow" id="up_arrow"></a>
+            <ul id="under_features">
+              <li><a href="#"><img src="./images/icon-todo.svg" alt="Todo">TodoList</a></li>
+              <li><a href="#"><img src="./images/icon-calendar.svg" alt="Cal">Calendar</a></li>
+              <li><a href="#"><img src="./images/icon-reminders.svg" alt="Remind">Reminders</a></li>
+              <li><a href="#"><img src="./images/icon-planning.svg" alt="Plan">Planning</a></li>
+            </ul>
+          </li>
+          <li><a href="#" onclick="dropDownCompany()">Company <img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow" id="up_arrow_I"></a>
+            <ul id="under_company">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="right_side_div">
+      <a href="#" id="login">Login</a>
+      <a href="#" id="register">Register</a>
+      <img src="./images/icon-menu.svg" alt="menu" id="menu">
+    </div>
+  </section>
+
+<!--SIDE-NAVIGATION-->
+  <section id="side_nav_bar">
+    <div id="side_nav">
+      <ul>
+        <li>
+          <a href="#" onclick="dropSideFeatures()" >Features <img src="./images/icon-arrow-down.svg" alt="arrow" id="side_arrow"></a>
+          <ul id="side_features">
+            <li><a href="#"><img src="./images/icon-todo.svg" alt="Todo">TodoList</a></li>
+            <li><a href="#"><img src="./images/icon-calendar.svg" alt="Cal">Calendar</a></li>
+            <li><a href="#"><img src="./images/icon-reminders.svg" alt="Remind">Reminders</a></li>
+            <li><a href="#"><img src="./images/icon-planning.svg" alt="Plan">Planning</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" onclick="dropSideCompany()">Company <img src="./images/icon-arrow-down.svg" alt="arrow" id="side_arrow_I"></a>
+          <ul id="side_company">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div id="side_btns">
+        <a href="#" id="login_side">Login</a>
+        <a href="#" id="register_side">Register</a>
+      </div>
+    </div>
+  </section>
+
+<!--HERO-SECTION-->
+  <section class="hero_container">
+    <div class="row">
+      <div class="col-1">
+        <div class="hero_text">
+          <h1>Make <br class="hide_on_mobile">remote work</h1>
+          <p>Get your team in sync, no matter your location. <br class="hide_on_mobile"> Streamline processes, 
+            create team rituals, and <br class="hide_on_mobile"> watch productivity soar.</p>
+            <a href="Learn more"> Learn more</a>
+            <div class="sponsors">
+              <img src="./images/client-databiz.svg">
+              <img src="./images/client-audiophile.svg">
+              <img src="./images/client-meet.svg">
+              <img src="./images/client-maker.svg">
+            </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <img src="./images/image-hero-desktop.png" alt="hero_img">
+      </div>
+    </div>
+  </section>
+  <section id="opaque"></section>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
