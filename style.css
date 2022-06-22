@@ -137,6 +137,19 @@ body{
 	background-color: var(--Almost-White);
 	z-index: 1;
 	transition: right .5s;
+	display: none;
+}
+#opaque{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	background-color: var(--Almost-Black);
+	opacity: 0.9;
+	z-index: 0;
+	display: none ;
+	transition: block .5s;
+	visibility: hidden;
 }
 #menu{
 	z-index: 2;
@@ -205,17 +218,6 @@ body{
 	margin-top: 20px;
 	margin-left: 40px;
 	transition: .3s;
-}
-#opaque{
-	width: 100vh;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	background-color: var(--Almost-Black);
-	opacity: 0.9;
-	z-index: 0;
-	display: none;
-	transition: block .5s;
 }
 
 /*HERO_SECTION*/
@@ -337,5 +339,11 @@ body{
 	.sponsors img{
 		margin-right: 15px;
 		width: 60px;
+	}
+	#side_nav_bar{
+		display: block;
+	}
+	#opaque{
+		visibility: visible;
 	}
 }
