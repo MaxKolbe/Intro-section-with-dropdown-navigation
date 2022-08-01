@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/C1h2i3d4i5/Intro-section-with-dropdown-navigation)
+- Solution URL: (https://github.com/MaxKolbe/Intro-section-with-dropdown-navigation)
 - Live Site URL: (https://c1h2i3d4i5.github.io/Intro-section-with-dropdown-navigation/)
 
 ## My process
